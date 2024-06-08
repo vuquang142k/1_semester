@@ -1,0 +1,22 @@
+from math import sqrt
+a,b,c=map(float,input('nhap 3 so: ').split(','))
+if a==0:
+    if b==0:
+        if c==0:
+            print('vo so nghiem')
+        else:
+            print('vo nghiem')
+    else:
+        x=-c/b
+        print('co 1 nghiem: {;7.3f}'.format(x))
+else:
+    D=b*b-4*a*c
+    if D>0:
+        x1=(-b+sqrt(D))/(2*a)
+        x2=(-b-sqrt(D))/(2*a)
+        print('co 2 nghiem:{:7.3f} {:7.3f}'.format(x1,x2))
+    elif D==0:
+        x=-b/(2*a)
+        print('co nghiem kep: {:7.3f}'.format(x))
+    else:
+        print('vo nghiem')

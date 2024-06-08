@@ -1,0 +1,1 @@
+C = Canvas(root, width=800, height=800, bg='white')
